@@ -1,16 +1,29 @@
-
-const Button = () => {
-	return (
-		<div className="p-4 flex-1 w-64 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg text-white">Click Here</div>
-	)
-}
+import Container from "./components/Container";
+import UseEffectHooks from "./components/hooks/UseEffectHooks";
+import UseEffectHooksMouseContainer from "./components/hooks/UseEffectHooksClean";
+import UseEffectHooksInterval from "./components/hooks/UseEffectHooksInterval";
+import UseEffectHooksMouse from "./components/hooks/UseEffectHooksMouse.jsx";
+import UseStateHooks from "./components/hooks/UseStateHooks";
+import UseStateHooksArray from "./components/hooks/UseStateHooksArray";
+import UseStateHooksEvent from "./components/hooks/UseStateHooksEvent";
+import UseStateHooksObject from "./components/hooks/UseStateHooksObject";
 
 const App = () => {
-  return (
-	<div className="container mx-auto p-4">
-		<Button />
-	</div>
-  );
+	return (
+		<>
+			<Container>
+				<h1 className="text-3xl mb-3">React Hooks</h1>
+				<UseEffectHooksInterval />
+				<UseEffectHooksMouseContainer />
+				{/* <UseEffectHooksMouse /> */}
+				<UseEffectHooks />
+				<UseStateHooks />
+				<UseStateHooksEvent />
+				<UseStateHooksObject />
+				<UseStateHooksArray />
+			</Container>
+		</>
+	);
 };
 
 export default App;
