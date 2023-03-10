@@ -6,12 +6,17 @@ const UseEffectHooksMouse = () => {
 	const [y, setY] = useState(0);
 
 	const logMousePosition = (e) => {
+		console.log('mouse event')
 		setX(e.clientX);
 		setY(e.clientY);
 	}
 	
 	useEffect( () => {
 		window.addEventListener('mousemove', logMousePosition);
+		return () => {
+			console.log('Unmounting component.')
+			window.removeEventListener('mousemove', logMousePosition)
+		}
 	}, [])
 
 	return (
