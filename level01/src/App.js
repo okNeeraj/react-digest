@@ -1,6 +1,7 @@
 import Container from "./components/Container";
 import UseEffectHooks from "./components/hooks/UseEffectHooks";
 import UseEffectHooksMouseContainer from "./components/hooks/UseEffectHooksContainer";
+import UseEffectHooksFetchData from "./components/hooks/UseEffectHooksFetchData";
 import UseEffectHooksInterval from "./components/hooks/UseEffectHooksInterval";
 import UseEffectHooksMouse from "./components/hooks/UseEffectHooksMouse.jsx";
 import UseStateHooks from "./components/hooks/UseStateHooks";
@@ -13,10 +14,12 @@ const App = () => {
 		<>
 			<Container>
 				<h1 className="text-3xl mb-3">React Hooks</h1>
+				<UseEffectHooksFetchData />
 				<UseEffectHooksInterval />
 				<UseEffectHooksMouseContainer />
 				{/* <UseEffectHooksMouse /> */}
 				<UseEffectHooks />
+
 				<UseStateHooks />
 				<UseStateHooksEvent />
 				<UseStateHooksObject />
