@@ -1,6 +1,6 @@
 import Container from "./components/Container";
 import UseEffectHooks from "./components/hooks/UseEffectHooks";
-import UseEffectHooksMouseContainer from "./components/hooks/UseEffectHooksClean";
+import UseEffectHooksMouseContainer from "./components/hooks/UseEffectHooksContainer";
 import UseEffectHooksInterval from "./components/hooks/UseEffectHooksInterval";
 import UseEffectHooksMouse from "./components/hooks/UseEffectHooksMouse.jsx";
 import UseStateHooks from "./components/hooks/UseStateHooks";
