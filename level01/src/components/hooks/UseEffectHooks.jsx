@@ -20,7 +20,7 @@ const UseEffectHooks = (props) => {
 	}, [resourceType])
 
 	return (
-		<div className="border-solid border-2 border-gray-400 mb-5 p-4">
+		<div className="border-solid border-2 border-green-400 mb-5 p-4">
 			<h3 className="text-2xl mb-2">useEffect :: Fetch Data on tab change using fetch</h3>
 			{/* <input type="text" placeholder="First Name" className="border-solid rounded border-2 mr-2 border-black-300 px-2 py-2" /> */}
 			<button onClick={ () => resourceTypeHandler('users')} className={buttonStyle}>Users</button>

@@ -15,7 +15,7 @@ const UseEffectHooksInterval = () => {
 	}, [count]);
 
 	return (
-		<div className="border-solid border-2 border-gray-400 mb-5 p-4">
+		<div className="border-solid border-2 border-green-400 mb-5 p-4">
 			<h3 className="text-2xl mb-2">useEffect :: Interval</h3>
 			<button className={buttonStyle}>{count}</button>
 		</div>

@@ -18,7 +18,7 @@ const UseEffectHooksMouse = () => {
 	}, [])
 
 	return (
-		<div className="border-solid border-2 border-gray-200 mb-5 p-4">
+		<div className="border-solid border-2 border-green-400 mb-5 p-4">
 			<h3 className="text-2xl mb-2">useEffect :: MouseEvent</h3>
 			<button className={buttonStyle}>Mouse X = {x}</button>
 			<button className={buttonStyle}>Mouse Y = {y}</button>
