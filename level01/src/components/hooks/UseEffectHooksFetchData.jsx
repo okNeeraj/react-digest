@@ -5,11 +5,10 @@ const buttonStyle = "px-5 py-2 flex-1 rounded mb-1 mr-2 items-center justify-cen
 
 function UseEffectHooksFetchData() {
 	const [posts, setPosts] = useState([]);
-	const [limit, setLimit] = useState(5);
 	const [page, setPage] = useState(1);
 
 	useEffect(() => {
-		axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${limit}`)
+		axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${5}`)
 			.then(res => {
 				setPosts(res.data)
 				console.log(res.data)
@@ -17,7 +16,7 @@ function UseEffectHooksFetchData() {
 			.catch(err => {
 				console.log(err.message)
 			})
-	}, [page, limit]);
+	}, [page]);
 
 	const loadMorePosts = () => {
 		setPage(prevPage => prevPage + 1)
